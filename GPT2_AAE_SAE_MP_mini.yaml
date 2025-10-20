@@ -1,0 +1,14 @@
+exp: MinimalPair
+
+mode:
+  - analyze
+models:
+  hf_causal_model:
+    - openai-community/gpt2
+predfpath: ../midterm/predictions/GPT2_mini_agreement.tsv
+datafpath: ../midterm/AAE_SAE_MP_mini.tsv
+resultsfpath: ../midterm/results/GPT2_mini_hoffmanagreement.tsv
+
+save: by_cond
+
+conditions: occupation
