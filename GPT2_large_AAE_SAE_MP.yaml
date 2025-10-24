@@ -1,0 +1,17 @@
+exp: MinimalPair
+
+mode:
+  - evaluate
+  - analyze
+models:
+  hf_causal_model:
+    - openai-community/gpt2-large
+predfpath: /home/mmorel/NLPScholar/predictions/GPT2_large_agreement_technician.tsv
+datafpath: /home/mmorel/NLPScholar/AAE_SAE_MP_technician.tsv
+resultsfpath: /home/mmorel/NLPScholar/results/GPT2_large_hofmann_agreement_technician.tsv
+
+save: by_cond
+
+conditions: occupation
+
+device: cuda

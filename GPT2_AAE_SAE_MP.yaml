@@ -1,0 +1,17 @@
+exp: MinimalPair
+
+mode:
+  - evaluate
+  - analyze
+models:
+  hf_causal_model:
+    - openai-community/gpt2
+predfpath: /home/mmorel/NLPScholar/predictions/GPT2_agreement_student.tsv
+datafpath: /home/mmorel/NLPScholar/AAE_SAE_student_with_ROI.tsv
+resultsfpath: /home/mmorel/NLPScholar/results/GPT2_hofmann_agreement_student.tsv
+
+save: by_cond
+
+conditions: occupation
+
+device: cuda
